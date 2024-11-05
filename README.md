@@ -1,6 +1,6 @@
-# Block Puzzle Game
+# Block Master Game (On-going)
 
-Welcome to the **Block Puzzle Game**, a modern twist on the classic Tetris game built with a Flask backend and a React frontend. This project demonstrates a full-stack web application combining Python, Flask, and ReactJS.
+Welcome to the **Block Master Game**, a modern twist on the classic Tetris game built with a Flask backend and a React frontend. This project demonstrates a full-stack web application combining Python, Flask, and ReactJS.
 
 ## Features
 
