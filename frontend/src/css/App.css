@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.game-player-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px white solid;
+}
+
+.game-grid-panel {
+  max-height: 60vh;
+}

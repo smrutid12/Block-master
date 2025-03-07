@@ -9,6 +9,9 @@ SHAPE_COLORS = [
     (255, 255, 0),  # Yellow
     (255, 165, 0),  # Orange
     (0, 0, 255),    # Blue
+    (255, 0, 255),  # Random
+    (165, 165, 255),# Random
+    (0, 244, 255),  # Random
     (128, 0, 128)   # Purple
 ]
 

@@ -1,15 +1,18 @@
-import React from 'react';
+import React from "react";
+import "../css/game-grid.css";
 
-const Game = ({ grid }) => {
+const GameGrid = ({ grid }) => {
   return (
     <div className="game-grid">
       {grid.map((row, rowIndex) => (
         <div key={rowIndex} className="game-row">
-          {row.map((cell, cellIndex) => (
+          {row.map((cell, cellIndex) => (  
             <div
               key={cellIndex}
               className="game-cell"
-              style={{ backgroundColor: `rgb(${cell[0]}, ${cell[1]}, ${cell[2]})` }}
+              style={{
+                backgroundColor: `rgb(${cell[0]}, ${cell[1]}, ${cell[2]})`,
+              }}
             />
           ))}
         </div>
@@ -18,4 +21,4 @@ const Game = ({ grid }) => {
   );
 };
 
-export default Game;
+export default GameGrid;

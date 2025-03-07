@@ -1,13 +1,42 @@
-import React from 'react';
+import React from "react";
+import "../css/control.css";
+import {
+  ChevronLeft,
+  ChevronDown,
+  ChevronRight,
+  ChevronUp,
+  RotateCw,
+  Power,
+} from "lucide-react";
 
-const Controls = ({ onMove, onRotate, onDrop }) => {
+const DATA = {
+  left: <ChevronLeft />,
+  right: <ChevronRight />,
+  up: <ChevronUp />,
+  down: <ChevronDown />,
+  rotate: <RotateCw />,
+  drop: <ChevronDown />,
+  start: <Power />,
+};
+
+const Controls = ({ onMove, onRotate, onDrop, onStart }) => {
   return (
     <div className="controls">
-      <button onClick={() => onMove('left')}>Left</button>
-      <button onClick={() => onMove('right')}>Right</button>
-      <button onClick={() => onMove('down')}>Down</button>
-      <button onClick={onRotate}>Rotate</button>
-      <button onClick={onDrop}>Drop</button>
+      <div className="controls-column">
+        <button onClick={() => onMove("up")}>{DATA.up}</button>
+        <div className="controls-row">
+          <button onClick={() => onMove("left")}>{DATA.left}</button>
+          <button onClick={() => onMove("right")}>{DATA.right}</button>
+        </div>
+        <button onClick={() => onMove("down")}>{DATA.down}</button>
+      </div>
+      <div>
+        <div className="controls-row">
+          <button onClick={onRotate}>{DATA.rotate}</button>
+          <button onClick={onDrop}>{DATA.drop}</button>
+          <button onClick={onStart}>{DATA.start}</button>
+        </div>
+      </div>
     </div>
   );
 };
